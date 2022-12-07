@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+}
+
+.logo {
+    width: 40%;
+    background-color: bisque;
+}
+
+.sidebar {
+    background-color: aliceblue;
+    flex: auto;
+}
