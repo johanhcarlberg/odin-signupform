@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -14,14 +15,65 @@ body {
     width: 60vw;
     height: 70vh;
     display: flex;
+    border-radius: 15px;
 }
 
-.logo {
-    width: 40%;
+.logo-container {
     background-color: bisque;
+    border-radius: 8px 0 0 8px;
+    flex: 1;
+}
+
+.logo-bar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 8rem;
+    margin-top: 30%;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .sidebar {
-    background-color: aliceblue;
-    flex: auto;
+    background-color: rgb(246, 251, 255);
+    flex: 2;
+    border-radius: 0px 8px 8px 0;
+}
+
+.signup {
+    width: 100%;
+    background-color: #FFF;
+    padding: 40px;
+    margin-top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.signup h2 {
+    margin-bottom: 2rem;
+}
+
+.signup-form input {
+    width: 30%;
+    padding: 5px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-right: 9em;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-row input {
+    width: 100%;
 }
