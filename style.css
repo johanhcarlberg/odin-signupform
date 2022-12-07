@@ -37,6 +37,16 @@ body {
     justify-content: center;
 }
 
+.logo-bar img {
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.logo-bar span {
+    font-size: 3rem;
+}
+
 .sidebar {
     background-color: #faf7f3;
     flex: 2;
