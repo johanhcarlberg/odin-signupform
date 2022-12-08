@@ -76,7 +76,7 @@ body {
 .signup {
     width: 100%;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -127,7 +127,7 @@ body {
     flex-wrap: wrap;
     gap: 50px;
     margin-right: 5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.3rem;
 }
 
 .form-row input {
