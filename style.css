@@ -22,6 +22,7 @@ body {
     display: flex;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 0 4px #ddd;
 }
 
 .logo-container {
