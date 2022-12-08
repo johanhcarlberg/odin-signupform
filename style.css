@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 60vw;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     border-radius: 15px;
 }
@@ -51,6 +51,18 @@ body {
     background-color: #faf7f3;
     flex: 2;
     border-radius: 0px 8px 8px 0;
+}
+
+.sidebar-text {
+    padding-left: 2rem;
+    padding-right: 10rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.sidebar-text p:last-of-type {
+    margin-top: 1rem;
 }
 
 .signup {
