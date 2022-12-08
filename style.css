@@ -16,6 +16,7 @@ body {
     height: 80vh;
     display: flex;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .logo-container {
@@ -73,6 +74,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     box-sizing: border-box;
+    box-shadow: 0 2px 4px #ccc;
 }
 
 .signup h2 {
@@ -89,7 +91,7 @@ body {
     margin: 2rem 0 0 2.5rem;
     color: #fff;
     padding: 10px 30px;
-    background-color: #daa76a;
+    background-color: #dfa55f;
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -131,5 +133,9 @@ body {
 .login a {
     color: #ee8709;
     text-decoration: none;
+}
+
+.login a:hover {
+    color: #e2ba89;
 }
 
