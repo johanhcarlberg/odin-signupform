@@ -1,15 +1,25 @@
 const passwordInput = document.querySelector("#password");
 const passwordRepeatInput = document.querySelector("#password-repeat");
+const firstNameInput = document.querySelector("#first-name");
+const lastNameInput = document.querySelector("#last-name");
+const emailInput = document.querySelector("#email");
+const phoneInput = document.querySelector("#phone");
 const form = document.querySelector("form.signup-form");
 
 passwordInput.addEventListener('focusout', checkPasswords);
 passwordRepeatInput.addEventListener('focusout', checkPasswords);
+firstNameInput.addEventListener('focusout', checkFirstname);
+lastNameInput.addEventListener('focusout', checkLastName);
+emailInput.addEventListener('focusout', checkEmail);
+phoneInput.addEventListener('focusout', checkPhone);
+
 form.addEventListener('submit', onSubmit)
 
 function onSubmit(e) {
     checkFirstname();
     checkLastName();
     checkEmail();
+    checkPhone();
     checkPasswords();
     if(!form.checkValidity()) {
         e.preventDefault();
@@ -38,7 +48,6 @@ function checkPasswords(event) {
 }
 
 function checkFirstname(event) {
-    const firstNameInput = document.querySelector("#first-name");
     const firstNameErrorSpan = document.querySelector("#first-name~span");
     if (firstNameInput.validity.valueMissing) {
         firstNameInput.classList.add("error");
@@ -52,7 +61,6 @@ function checkFirstname(event) {
 }
 
 function checkLastName(event) {
-    const lastNameInput = document.querySelector("#last-name");
     const lastNameErrorSpan = document.querySelector("#last-name~span");
     if (lastNameInput.validity.valueMissing) {
         lastNameInput.classList.add("error");
@@ -66,7 +74,6 @@ function checkLastName(event) {
 }
 
 function checkEmail(event) {
-    const emailInput = document.querySelector("#email");
     const emailErrorSpan = document.querySelector("#email~span");
     if (emailInput.validity.valueMissing) {
         emailInput.classList.add("error");
@@ -76,5 +83,18 @@ function checkEmail(event) {
         emailInput.classList.remove("error");
         emailErrorSpan.textContent = "";
         emailInput.setCustomValidity("");
+    }
+}
+
+function checkPhone(event) {
+    const phoneErrorSpan = document.querySelector("#phone~span");
+    if (phoneInput.validity.valueMissing) {
+        phoneInput.classList.add("error");
+        phoneErrorSpan.textContent = "*Phone number is empty";
+        phoneInput.setCustomValidity("Phone number is empty");
+    } else {
+        phoneInput.classList.remove("error");
+        phoneErrorSpan.textContent = "";
+        phoneInput.setCustomValidity("");
     }
 }
