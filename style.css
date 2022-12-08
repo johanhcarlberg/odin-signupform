@@ -4,6 +4,11 @@
     font-family: "Helvetica", "Arial", sans-serif;
 }
 
+@font-face {
+    font-family: "Norse";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -45,7 +50,8 @@ body {
 }
 
 .logo-bar span {
-    font-size: 3rem;
+    font-family: "Norse", "Helvetica", "Arial", sans-serif;
+    font-size: 5rem;
 }
 
 .sidebar {
