@@ -158,10 +158,11 @@ body {
     border: 1px solid rgb(224, 79, 79);
 }
 
-.error~span {
-    display: block;
+.signup-form input~span {
+    height: 12px;
     color:rgb(224, 79, 79);
     font-size: 12px;
+    display: block;
 }
 
 .signup-form input[required]+label:after {
