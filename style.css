@@ -96,6 +96,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 2px 2px 3px #ccc;
 }
 
 .signup-form button:hover {
