@@ -79,6 +79,10 @@ function checkEmail(event) {
         emailInput.classList.add("error");
         emailErrorSpan.textContent = "*Email is empty";
         emailInput.setCustomValidity("Email is empty");
+    } else if (emailInput.validity.typeMismatch) {
+        emailInput.classList.add("error");
+        emailErrorSpan.textContent = "*Email is invalid";
+        emailInput.setCustomValidity("Email is empty");
     } else {
         emailInput.classList.remove("error");
         emailErrorSpan.textContent = "";
