@@ -85,6 +85,13 @@ body {
     width: 35%;
     padding: 5px;
     font-size: 12px;
+    border: 1px solid #e4cdb3;
+}
+
+.signup-form input:focus {
+    outline: none;
+    border: 1px solid #eb9833;
+    box-shadow: 1px 1px 3px #fde7ce;
 }
 
 .signup-form button {
