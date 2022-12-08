@@ -147,3 +147,22 @@ body {
     color: #e2ba89;
 }
 
+.signup-form .error {
+    border: 1px solid rgb(224, 79, 79);
+}
+
+.error~span:after {
+    display: block;
+    content: "* Passwords do not match";
+    color:rgb(224, 79, 79);
+    font-size: 12px;
+}
+
+.signup-form input[required]+label:after {
+    content: "*";
+}
+
+.signup-form label {
+    order: -1;
+}
+
