@@ -3,4 +3,4 @@ This project is part of the Intermediate HTML and CSS course on [The Odin Projec
 
 Background image by [Marek Piwnicki](https://unsplash.com/@marekpiwnicki) from [Unsplash](https://unsplash.com)
 
-[Preview](https://jshc.github.io/odin-signupform/) on GitHub Pages
+[Preview](https://johanhcarlberg.github.io/odin-signupform/) on GitHub Pages
